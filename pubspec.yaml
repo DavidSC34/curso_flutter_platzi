@@ -73,6 +73,9 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
     - assets/imgs/people.jpg
+    - assets/imgs/travel-1.jpeg
+    - assets/imgs/travel-2.jpg
+    - assets/imgs/travel-3.jpg 
 
   fonts:
     - family: Lato
