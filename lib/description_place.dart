@@ -98,8 +98,8 @@ class DescriptionPlace extends StatelessWidget{
     return Column(
       children: <Widget>[
         title_stars,
-        description,
-        ReviewList()
+        description
+
       ],
     );;
   }
