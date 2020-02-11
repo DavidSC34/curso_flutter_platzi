@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'description_place.dart';
+import 'review_list.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
+  String texto_desc = '''Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  when an unknown printer took a galley of type and scrambled it to make a type specimen book.''';
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,17 +17,10 @@ class MyApp extends StatelessWidget {
       ),
       home:Scaffold(
         appBar:AppBar(
-          title: Text("REto 2"),
+          title: Text("Sobre Widgets Platzi"),
         ) ,
-        body: Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('assets/imgs/bruce-lee.jpg'),
-              fit:BoxFit.fill
-            )
-          ),
-
-        ),
+        //body: new DescriptionPlace("Bahamas",4,texto_desc) ,
+        body: ReviewList() ,
       )//MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
